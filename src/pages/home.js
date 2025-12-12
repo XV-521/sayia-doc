@@ -4,7 +4,7 @@ export function HomePage() {
 <section id="home-box-outer">
     <section id="home-box">
         <div id="home-box-content">
-            <img src="../../static/logo-big.webp" alt="" class="logo-big">
+            <img src="/static/logo-big.webp" alt="" class="logo-big">
             <h1>Sayia</h1>
             <p>A constructed language, designed for simplicity, precision, and structured expression.</p>
         </div>
