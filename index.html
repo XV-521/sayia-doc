@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="sayia constructed language">
+  <base href="/">
+  <link rel="icon" href="static/icons/icon.png">
+  <link rel="apple-touch-icon" href="static/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="./src/style.css" >
+  <script type="module" src="./src/main.js" defer></script>
+  <title>Sayia</title>
+</head>
+<body>
+  <header id="header" translate="no" class="no-copy">
+    <nav id="header-nav">
+      <label id="header-menu-btn" class="pointer svg">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+      </label>
+      <div id="header-title">
+        <span id="title-main">
+          SAYIA
+        </span>
+      </div>
+      <div id="search">
+        <label>
+          <input id="search-input" class="input" type="text" placeholder="Type a word.." spellcheck="false" autocomplete="off" autocapitalize="off">
+        </label >
+        <span id="search-btn" class="pointer svg">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+          </svg>
+        </span>
+      </div>
+      <div id="lightbulb">
+        <span id="lightbulb-btn" class="pointer svg">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+            <path d="M400-240q-33 0-56.5-23.5T320-320v-50q-57-39-88.5-100T200-600q0-117 81.5-198.5T480-880q117 0 198.5 81.5T760-600q0 69-31.5 129.5T640-370v50q0 33-23.5 56.5T560-240H400Zm0-80h160v-92l34-24q41-28 63.5-71.5T680-600q0-83-58.5-141.5T480-800q-83 0-141.5 58.5T280-600q0 49 22.5 92.5T366-436l34 24v92Zm0 240q-17 0-28.5-11.5T360-120v-40h240v40q0 17-11.5 28.5T560-80H400Zm80-520Z"/>
+          </svg>
+        </span>
+      </div>
+    </nav>
+  </header>
+  <div id="overlay" class="hidden no-copy"></div>
+  <nav id="side" class="hidden no-copy">
+    <div id="side-nav">
+      <div id="side-menu-title"></div>
+      <div id="side-menu"></div>
+    </div>
+    <span id="side-nav-x-btn" class="pointer">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <path d="M5 5l14 14M5 19L19 5"
+              stroke="currentColor" stroke-width="8.5" stroke-linecap="square"/>
+      </svg>
+    </span>
+  </nav>
+
+  <div id="main">
+    <div id="path-box" class="no-copy"></div>
+    <div id="page"></div>
+  </div>
+
+  <div id="word-tip" class="hidden">
+      <span id="word-tip-btn" class="pointer">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <path d="M5 5l14 14M5 19L19 5"
+                stroke="currentColor" stroke-width="8.5" stroke-linecap="square"/>
+        </svg>
+      </span>
+      <div id="word-tip-inner"></div>
+  </div>
+
+  <footer id="footer" class="no-copy">
+    <nav id="footer-nav"></nav>
+  </footer>
+</body>
+</html>
