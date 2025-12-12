@@ -113,7 +113,7 @@ html[color-theme="dark"] {
 
 @font-face {
   font-family: "IPA";
-  src: url("../static/fonts/NotoSans-Regular.ttf");
+  src: url("../public/fonts/NotoSans-Regular.ttf");
 }
 
 /* ========= GLOBAL ========= */
