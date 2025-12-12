@@ -111,6 +111,7 @@ html[color-theme="dark"] {
 
 /* ========= FONT ========= */
 
+/*noinspection CssUnknownTarget*/
 @font-face {
   font-family: "IPA";
   src: url("/fonts/NotoSans-Regular.ttf");
